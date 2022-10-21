@@ -1,1 +1,132 @@
+//1 ATM2
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{int n,k;
+	    cin>>n>>k;
+	    int A[n];
+	    for(int i=0;i<n;i++){
+	    cin>>A[i];
+	   
+	   if(k>=A[i]){
+	    k=k-A[i];
+	    A[i]=1;
+       }
+	else{A[i]=0;}
+	 }
+	for(int i=0;i<n;i++){
+	cout<<A[i];
+	}
+	std::cout<< std::endl;
+	}
+	return 0;
+}
+//PROBCAT
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int x;
+	    cin>>x;
+	    
+	    if(x<100){cout<<"Easy"<<endl;}
+	    else if(x<200){cout<<"Medium"<<endl;}
+	    else{cout<<"Hard"<<endl;}
+	}
+	return 0;
+}
+//3WEIGHTBL
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int w1,w2,x1,x2,m;
+	    cin>>w1>>w2>>x1>>x2>>m;
+	    int a=w2-w1;
+	    int a1=m*x1;
+	    int a2=m*x2;
+	    if(a>=a1 and a<=a2)
+	    cout<<"1"<<endl;
+	    else
+	    cout<<"0"<<endl;
+	   
+	}
+	return 0;
+}
+//4 CHFSPL
+#include <iostream>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int a,b,c,d;
+	   cin>>a>>b>>c;
+	    d=min(min(a,b),min(a,c));
+	    std::cout <<a+b+c-d<< std::endl;
+	}
+	return 0;
+}
+//5 CSTOCK
+#include <iostream>
+using namespace std;
+int main() {
+int t;
+	cin>>t;
+	while(t--)
+	{
+	    float s,a,b,c;
+	   cin>>s>>a>>b>>c;
+	    s=s+s*c*0.01;
+	    if(s>=a and s<=b)
+	    cout<<"Yes"<<endl;
+	    else
+	    cout<<"No"<<endl;
+	}
+	return 0;
+}
+//MXEVNSUB
+#include <iostream>
+using namespace std;
+int main() {
+int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n;
+	   cin>>n;
+	 int sum=n*(n+1)/2;
+	  if(sum%2==0){cout <<n<<endl;}
+	  else{cout <<n-1<<endl;}
+	}
+	return 0;
+}
 //
+#include <iostream>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int l,r;
+	   cin>>l>>r;
+cout<<2*r-2*l+1<<"\n";
+	}
+	return 0;
+}
+
+
