@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+while(t--)
+{
+    int n,s;
+    cin>>n>>s;
+    if(n>=s){std::cout <<s<< std::endl;}
+    else{std::cout << 2*n-s << std::endl;}
+}
+	return 0;
+}
