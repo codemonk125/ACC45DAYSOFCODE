@@ -1,0 +1,82 @@
+//day3
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int u,v,a,s;
+	    cin>>u>>v>>a>>s;
+	    int k=0;
+	    if(u<=v){std::cout << "YES" << std::endl;}
+	    else
+	    {
+	        v=v*v;
+	        k=u*u-2*a*s;  
+	        if(k<=v)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"NO"<<endl;
+	    } 
+	    }
+	}
+	return 0;
+}
+//
+//LUCKFOUR
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	while(t--){
+	    int i;
+	    cin >> i;
+	    int count=0;
+	    for(int j=i;j>0;){
+	        if(j%10==4){
+	            count=count+1;
+	        }
+	        j=j/10;
+	    }
+	    cout << count<< endl;
+	}
+	return 0;
+}
+//MATCHES **GD
+#include <iostream>
+using namespace std;
+
+int main() {
+int t,a,b;
+cin>>t;
+while(t--)
+{
+    cin>>a>>b;
+    int sum=a+b,m=0;
+    while(sum!=0){
+    int n;
+    n=sum%10;
+    if(n==0){m+=6;}
+    else if(n==1){m+=2;}
+    else if(n==2){m+=5;}
+    else if(n==3){m+=5;}
+    else if(n==4){m+=4;}
+    else if(n==5){m+=5;}
+    else if(n==6){m+=6;}
+    else if(n==7){m+=3;}
+    else if(n==8){m+=7;}
+    else if(n==9){m+=6;}
+    sum=sum/10;
+    }
+    cout<<m<<endl;
+}
+	return 0;
+}
