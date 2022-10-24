@@ -1,0 +1,11 @@
+//single code as busy in celebrating deepawali	//happy deepawali
+ #include <iostream>
+using namespace std;
+  int T,X,N;
+	cin >> T;
+	while(T--)
+	{
+	    cin >> X >> N;
+	    // Points for each test case will be X/10
+	    cout << (X/10) * N << endl;
+	}
