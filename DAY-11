@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;cin>>t; while (t--)
+    {
+        int a,b,c,x,y,z;
+        cin>>a>>b>>c;
+        cin>>x>>y>>z;
+        if((a>x && b>y ) ||( a>x && c>z) ||( b>y && c>z))
+        {
+            cout<<"A"<<endl;
+        }
+        else
+     cout<<"B"<<endl; 
+    }// your code goes here
+	return 0;
+}
